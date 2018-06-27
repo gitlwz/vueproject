@@ -13,7 +13,7 @@ export default {
 
         // 在这个模块中， dispatch(用来触发action) 和 commit(触发mutations) 也被局部化了
         // 他们可以接受 `root` 属性以访问根 dispatch 或 commit
-        increment(/*context*/ { dispatch, commit, state, getters,rootState, rootGetters }) {
+        increment(/*context*/ { dispatch, commit, state, getters, rootState, rootGetters }) {
             commit('increment', "参数")
             //commit('increment',"参数",{ root: true })
             //dispatch('increment', "参数", { root: true })
